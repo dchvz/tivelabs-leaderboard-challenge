@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# tivelabs-leaderboard-challenge
+## Get started
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project uses Tailwind to define the CSS classes for every component, to get all project's dependencies, run
 
-## Available Scripts
+```
+$ npm install
+```
 
-In the project directory, you can run:
+To run this project you just need to run
 
-### `yarn start`
+```
+$ npm start
+```
+## Behavior
+The application will display a list of users sorted by their score. This table will also display information about the users' nationality and some other rankings. When the application first loads, it will update the users stats (time, level) if necessary, according to the instructions for this challenge.
+## Exceptions
+- While the current demo does not implement a cache strategy for loading the users' scores(due to time inconveniences), it does implement the methods describe in the challenge instructions while displaying them on screen.
+- There is no other screen to display the curren user information, there is only one screen.
+- The selected user for the application was chosen arbitrarily to be the user with the highest score and then be easy to spot.
+## Data
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The `usersData.js` file represents a fake database of users to show in the application.
+### Users
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Their information includes:
 
-### `yarn test`
+| Attribute    | Type             | Description           |
+|-----------------|------------------|-------------------         |
+| userId                 | String           | The user’s unique identifier |
+| name          | String           | The user’s first name  and last name     |
+| level          | String           | The user’s first name  and last name     |
+| coins  | String           | The user's coins |
+| time | String | The time the ser has been playing on the platform|
+| country | String | The country the user is from|
+| friends      | Array         |  The user's friends ids
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
